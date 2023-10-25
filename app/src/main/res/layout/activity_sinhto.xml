@@ -9,9 +9,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:id="@+id/btnbacksinhto"
+        android:id="@+id/btn_back"
         android:text="back"
-        android:textSize="30dp"
         />
     <ListView
         android:layout_marginTop="50dp"

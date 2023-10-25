@@ -36,17 +36,21 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (position == 0) {
-                    Toast.makeText(MainActivity.this, "Cafe", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(MainActivity.this, CafeActivity.class));
-                }
-                if (position == 1) {
-                    Toast.makeText(MainActivity.this, "Tra sua", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(MainActivity.this, TrasuaActivity.class));
-                }
-                if (position == 2) {
-                    Toast.makeText(MainActivity.this, "Sinh to", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(MainActivity.this, SinhtoActivity.class));
+                switch (position) {
+                    case 0:
+                        Toast.makeText(MainActivity.this, "Cafe", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(MainActivity.this, CafeActivity.class));
+                        break;
+                    case 1:
+                        Toast.makeText(MainActivity.this, "Tra sua", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(MainActivity.this, TrasuaActivity.class));
+                        break;
+                    case 2:
+                        Toast.makeText(MainActivity.this, "Sinh to", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(MainActivity.this, SinhtoActivity.class));
+                        break;
+                    default:
+                        break;
                 }
             }
         });

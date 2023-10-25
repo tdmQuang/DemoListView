@@ -23,13 +23,11 @@ public class TrasuaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trasua);
 
-        Button btn2 = (Button) findViewById(R.id.btnbacktrasua);
+        Button btn2 = (Button) findViewById(R.id.btn_back);
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent intent2 = new Intent(TrasuaActivity.this, MainActivity.class);
-                startActivity(intent2);
+                TrasuaActivity.super.onBackPressed();
             }
         });
 

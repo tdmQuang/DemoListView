@@ -9,14 +9,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:id="@+id/btnbackcafe"
+        android:id="@+id/btn_back"
         android:text="back" />
-    <!--    <TextView-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:id="@+id/back"-->
-    <!--        android:text="Trở lại"-->
-    <!--        android:textSize="40dp"/>-->
 
     <ListView
         android:layout_marginTop="50dp"

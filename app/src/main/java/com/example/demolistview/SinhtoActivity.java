@@ -24,14 +24,12 @@ public class SinhtoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sinhto);
 
-        Button btn3 = (Button) findViewById(R.id.btnbacksinhto);
+        Button btn3 = (Button) findViewById(R.id.btn_back);
 
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent intent3 = new Intent(SinhtoActivity.this, MainActivity.class);
-                startActivity(intent3);
+                SinhtoActivity.super.onBackPressed();
             }
         });
 

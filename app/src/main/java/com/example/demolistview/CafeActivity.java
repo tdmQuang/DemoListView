@@ -20,8 +20,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CafeActivity extends AppCompatActivity {
+    private Button Backbtn;
     ListView listView;
-    String mTitle[] = {"Cafe đen", "Cafe sua da", "Cafe muoi"};
+    String mTitle[] = {"Cafe đen", "Cafe sữa đá", "Cafe muối"};
     String mDescription[] = {"10.000đ", "12.000đ", "15.000đ"};
     int images[] = {R.drawable.cafeden, R.drawable.cafesuada, R.drawable.cafemuoi};
 
@@ -30,13 +31,12 @@ public class CafeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cafe);
 
-        Button btn = (Button) findViewById(R.id.btnbackcafe);
+        Backbtn = (Button) findViewById(R.id.btn_back);
 
-        btn.setOnClickListener(new View.OnClickListener() {
+        Backbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1 = new Intent(CafeActivity.this, MainActivity.class);
-                startActivity(intent1);
+                CafeActivity.super.onBackPressed();
             }
         });
 
